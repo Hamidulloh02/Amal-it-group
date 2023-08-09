@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-cjc*6@5weex4o9yqyi=e^u2k^r+sns@_oga5_kazsc(wwk1&@0
 # SECRET_KEY = secrets_file["DJANGO"]["django-insecure-cjc*6@5weex4o9yqyi=e^u2k^r+sns@_oga5_kazsc(wwk1&@0"]
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['.pythonanywhere.app','127.0.0.1','*']
 
@@ -83,7 +83,9 @@ CORS_ORIGIN_WHITELIST = (
     'http://localhost:3000',
     'https://localhost:3000',
     'http://localhost:8000',
-    'https://localhost:8000'
+    'https://localhost:8000',
+    'https://localhost:5173',
+    'http://localhost:5173',
 )
 ROOT_URLCONF = 'blog_project.urls'
 
