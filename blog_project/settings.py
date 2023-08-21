@@ -50,7 +50,8 @@ INSTALLED_APPS = [
     'corsheaders',
     'Portfolio',
     'News',
-    "Contact"
+    "Contact",
+    "Serves"
 ]
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 SITE_ID = 1

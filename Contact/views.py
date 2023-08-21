@@ -5,6 +5,6 @@ from .serializers import ContactSerializer
 
 # Create your views here.
 
-class ContactView(ListAPIView,CreateAPIView):
+class ContactView(CreateAPIView,ListAPIView):
     queryset = Contact.objects.all()
     serializer_class = ContactSerializer

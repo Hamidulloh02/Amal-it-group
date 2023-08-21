@@ -36,11 +36,12 @@ schema_view = get_schema_view(
     permission_classes=(permissions.AllowAny,),
 )
 urlpatterns = [
-    path('ckeditor', include('ckeditor_uploader.urls')),
-    path('admin', admin.site.urls),
-    path('portfolio', include('Portfolio.urls')),
-    path('news',include('News.urls')),
-    path('contact',include('Contact.urls')),
+    path('ckeditor/', include('ckeditor_uploader.urls')),
+    path('admin/', admin.site.urls),
+    path('portfolio/', include('Portfolio.urls')),
+    path('news/',include('News.urls')),
+    path('contact/',include('Contact.urls')),
+    path('serves/',include('Serves.urls')),
 
     path('', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
     path('redoc/', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),
